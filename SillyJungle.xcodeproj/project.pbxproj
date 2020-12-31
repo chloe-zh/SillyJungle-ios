@@ -10,6 +10,9 @@
 		0E871F47421661DCCA576BDD /* Pods_SillyJungle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C8E8D92457892389301095D /* Pods_SillyJungle.framework */; };
 		18185C5F3C2F22FE55D66952 /* Pods_SillyJungleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C51233F119A0A07CA17B8CE /* Pods_SillyJungleTests.framework */; };
 		1991EADFB4C73472DDDC33AB /* Pods_SillyJungle_SillyJungleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07E8F5B689313CAC11A64916 /* Pods_SillyJungle_SillyJungleUITests.framework */; };
+		7859BBFA259D7C4900EA98B0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7859BBF9259D7C4900EA98B0 /* SceneDelegate.swift */; };
+		78CADC6F259D2C33008A2684 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CADC6E259D2C33008A2684 /* LoginViewController.swift */; };
+		78CADCE0259D3457008A2684 /* LoginStory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78CADCDF259D3457008A2684 /* LoginStory.storyboard */; };
 		78CFB1D7259D1FA700C97B52 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CFB1D6259D1FA700C97B52 /* ContentView.swift */; };
 		78CFB1D9259D1FA800C97B52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78CFB1D8259D1FA800C97B52 /* Assets.xcassets */; };
 		78CFB1DC259D1FA800C97B52 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78CFB1DB259D1FA800C97B52 /* Preview Assets.xcassets */; };
@@ -41,6 +44,9 @@
 		1C8E8D92457892389301095D /* Pods_SillyJungle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SillyJungle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4549D8F2C83D2514C040429A /* Pods-SillyJungle-SillyJungleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SillyJungle-SillyJungleUITests.release.xcconfig"; path = "Target Support Files/Pods-SillyJungle-SillyJungleUITests/Pods-SillyJungle-SillyJungleUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4C51233F119A0A07CA17B8CE /* Pods_SillyJungleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SillyJungleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7859BBF9259D7C4900EA98B0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		78CADC6E259D2C33008A2684 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		78CADCDF259D3457008A2684 /* LoginStory.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginStory.storyboard; sourceTree = "<group>"; };
 		78CFB1D1259D1FA700C97B52 /* SillyJungle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SillyJungle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78CFB1D6259D1FA700C97B52 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		78CFB1D8259D1FA800C97B52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -89,6 +95,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7859BAB8259D556F00EA98B0 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		78CADCCA259D31C9008A2684 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				78CADC6E259D2C33008A2684 /* LoginViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		78CADCCB259D31DD008A2684 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				78CADCDF259D3457008A2684 /* LoginStory.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
 		78CFB1C8259D1FA700C97B52 = {
 			isa = PBXGroup;
 			children = (
@@ -114,12 +143,16 @@
 		78CFB1D3259D1FA700C97B52 /* SillyJungle */ = {
 			isa = PBXGroup;
 			children = (
+				7859BAB8259D556F00EA98B0 /* Utils */,
+				78CADCCA259D31C9008A2684 /* Controller */,
+				78CADCCB259D31DD008A2684 /* StoryBoard */,
+				78CFB1DA259D1FA800C97B52 /* Preview Content */,
 				78CFB210259D244A00C97B52 /* AppDelegate.swift */,
+				7859BBF9259D7C4900EA98B0 /* SceneDelegate.swift */,
 				78CFB1D6259D1FA700C97B52 /* ContentView.swift */,
 				78CFB1D8259D1FA800C97B52 /* Assets.xcassets */,
 				78CFB1DD259D1FA800C97B52 /* Info.plist */,
 				78CFB202259D221600C97B52 /* GoogleService-Info.plist */,
-				78CFB1DA259D1FA800C97B52 /* Preview Content */,
 			);
 			path = SillyJungle;
 			sourceTree = "<group>";
@@ -185,6 +218,7 @@
 				78CFB1CE259D1FA700C97B52 /* Frameworks */,
 				78CFB1CF259D1FA700C97B52 /* Resources */,
 				ADC015846B72E15EAEA6C750 /* [CP] Embed Pods Frameworks */,
+				9A66A3661E33670655FCC59A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -223,6 +257,7 @@
 				78CFB1EA259D1FA900C97B52 /* Frameworks */,
 				78CFB1EB259D1FA900C97B52 /* Resources */,
 				66AD6CC19B7DBFA348477AA3 /* [CP] Embed Pods Frameworks */,
+				87F0E8EA2D05DBECBDE8FBB3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -283,6 +318,7 @@
 			files = (
 				78CFB1DC259D1FA800C97B52 /* Preview Assets.xcassets in Resources */,
 				78CFB1D9259D1FA800C97B52 /* Assets.xcassets in Resources */,
+				78CADCE0259D3457008A2684 /* LoginStory.storyboard in Resources */,
 				78CFB203259D221600C97B52 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -387,6 +423,40 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SillyJungle-SillyJungleUITests/Pods-SillyJungle-SillyJungleUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		87F0E8EA2D05DBECBDE8FBB3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SillyJungle-SillyJungleUITests/Pods-SillyJungle-SillyJungleUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SillyJungle-SillyJungleUITests/Pods-SillyJungle-SillyJungleUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SillyJungle-SillyJungleUITests/Pods-SillyJungle-SillyJungleUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A66A3661E33670655FCC59A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SillyJungle/Pods-SillyJungle-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SillyJungle/Pods-SillyJungle-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SillyJungle/Pods-SillyJungle-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		ADC015846B72E15EAEA6C750 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -411,8 +481,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78CADC6F259D2C33008A2684 /* LoginViewController.swift in Sources */,
 				78CFB211259D244A00C97B52 /* AppDelegate.swift in Sources */,
 				78CFB1D7259D1FA700C97B52 /* ContentView.swift in Sources */,
+				7859BBFA259D7C4900EA98B0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,7 +571,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -554,7 +626,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -570,8 +642,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_ASSET_PATHS = "\"SillyJungle/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SillyJungle/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -579,8 +652,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = silly.steven.SillyJungle;
+				PRODUCT_BUNDLE_IDENTIFIER = happy.steven.SillyJungle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -592,8 +666,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_ASSET_PATHS = "\"SillyJungle/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SillyJungle/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -601,8 +676,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = silly.steven.SillyJungle;
+				PRODUCT_BUNDLE_IDENTIFIER = happy.steven.SillyJungle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -612,7 +688,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C0D7797953B5EF89D1D18B5B /* Pods-SillyJungleTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SillyJungleTests/Info.plist;
@@ -634,7 +709,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BE5E61535D033E2228521EA2 /* Pods-SillyJungleTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SillyJungleTests/Info.plist;

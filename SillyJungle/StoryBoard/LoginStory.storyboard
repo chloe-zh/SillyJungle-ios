@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="odn-bU-Srx">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="WFu-Ko-lqH">
+            <objects>
+                <viewController id="odn-bU-Srx" customClass="LoginViewController" customModule="SillyJungle" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="c1b-Kw-a9P">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="pnD-bg-iqe" userLabel="Header">
+                                <rect key="frame" x="0.0" y="44" width="414" height="56"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Silly Jungle" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Dwl-98-7GN">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" id="1vw-eJ-5cR"/>
+                                            <constraint firstAttribute="width" constant="414" id="lED-Mb-Crs"/>
+                                        </constraints>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="29"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1kY-Mb-8VF" userLabel="Google Sign In" customClass="GIDSignInButton">
+                                <rect key="frame" x="87" y="175" width="240" height="128"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="1kY-Mb-8VF" secondAttribute="height" multiplier="15:8" id="FXe-eS-11q"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LbR-Yc-uIb"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1kY-Mb-8VF" firstAttribute="top" secondItem="pnD-bg-iqe" secondAttribute="bottom" constant="75" id="18b-6T-CcM"/>
+                            <constraint firstItem="1kY-Mb-8VF" firstAttribute="centerX" secondItem="pnD-bg-iqe" secondAttribute="centerX" id="A4h-3j-nct"/>
+                            <constraint firstItem="1kY-Mb-8VF" firstAttribute="centerX" secondItem="c1b-Kw-a9P" secondAttribute="centerX" id="ANF-9d-GCa"/>
+                            <constraint firstItem="LbR-Yc-uIb" firstAttribute="bottom" secondItem="1kY-Mb-8VF" secondAttribute="bottom" constant="510" id="Tnd-4Q-WfP"/>
+                            <constraint firstItem="pnD-bg-iqe" firstAttribute="top" secondItem="LbR-Yc-uIb" secondAttribute="top" id="syg-b4-O1i"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gqD-TC-LOY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-294.20289855072468" y="-24.107142857142858"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
